@@ -15,6 +15,8 @@ in [ROADMAP.md](ROADMAP.md).
 
 ### Fixed
 
+- A video put full screen, on YouTube and the like, fills the screen with its picture rather than black with the sound playing on.
+
 ## 1.0.2 — 24 September 2026
 
 ### Added
