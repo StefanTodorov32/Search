@@ -29,6 +29,7 @@ in [ROADMAP.md](ROADMAP.md).
 
 ### Fixed
 
+- The site card opens above the address of a tab near the bottom of the screen, when there is no room under it. Pushed up to fit, it covered the field the address was being edited in, and what was typed there ([#418](https://github.com/driceroland/Search/issues/418))
 - An extension's popup window answers for itself: windows.getCurrent from its page gives that window rather than the one in front, so Bitwarden's passkey window finds and sizes itself, and the window is tied to its page before the extension hears of it. Thanks [@lulkebit](https://github.com/lulkebit) ([#408](https://github.com/driceroland/Search/pull/408))
 - The floating video fills its window on players built like Twitch's: an ancestor with a transform, a filter or containment placed the video inside its own box, so part of the picture or none of it showed, and one drawn only on screen or faded out left the window black.
 - Many tabs no longer slow the tabs down: with tab groups on, each tab worked out the width of every other, so a space of 300 tabs took more than a second to leave; it takes a few hundredths now. Going back to a space no longer reads its whole file again either.
