@@ -29,6 +29,7 @@ in [ROADMAP.md](ROADMAP.md).
 
 ### Fixed
 
+- The address being edited in a tab scrolls with the caret: the field was as wide as the whole address and the row cut it off, so ← and → moved the caret out of sight and the end of a long address never showed ([#419](https://github.com/driceroland/Search/issues/419))
 - An extension's popup window answers for itself: windows.getCurrent from its page gives that window rather than the one in front, so Bitwarden's passkey window finds and sizes itself, and the window is tied to its page before the extension hears of it. Thanks [@lulkebit](https://github.com/lulkebit) ([#408](https://github.com/driceroland/Search/pull/408))
 - The floating video fills its window on players built like Twitch's: an ancestor with a transform, a filter or containment placed the video inside its own box, so part of the picture or none of it showed, and one drawn only on screen or faded out left the window black.
 - Many tabs no longer slow the tabs down: with tab groups on, each tab worked out the width of every other, so a space of 300 tabs took more than a second to leave; it takes a few hundredths now. Going back to a space no longer reads its whole file again either.
